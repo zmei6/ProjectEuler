@@ -1,0 +1,18 @@
+public class Problem3 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a = 1;
+		Long total=600851475143L;
+		while (total != 1){
+			if (total % a ==0 ){
+				total = total / a;
+				System.out.println (a);
+			}a++;
+		}
+	}
+
+}
