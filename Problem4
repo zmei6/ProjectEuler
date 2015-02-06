@@ -1,0 +1,29 @@
+
+public class Problem4 {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n;
+		int rev=0;
+		for(int x=900;x<1000;x++ ){
+			for (int y=900;y<1000;y++){
+				n= x*y;
+				int count = 0;
+				while (n != rev && count < 10){
+				int dig = n % 10;
+				rev = rev *10 +dig;
+				n= n/10;
+				count=count+1;
+				if(n==rev){
+					System.out.println("x="+x+"y="+y+"   "+x*y);
+				}
+				if(count==9){
+					rev=0;}
+				}
+			}
+		}
+	 }
+}
