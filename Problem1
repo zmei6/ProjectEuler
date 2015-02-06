@@ -1,0 +1,14 @@
+
+public class Problem1 {
+	public static void main(String[] args){
+		int count=0;
+		int Sum=0;
+		while ( count<1000) {
+			if( count % 3 == 0 || count % 5 == 0){
+				Sum = Sum + count;
+			}
+			count = count + 1;
+		}
+		System.out.println(Sum);
+	}
+}
